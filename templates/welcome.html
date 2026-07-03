@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block title %}
+Hi Lavanya 🌸
+{% endblock %}
+
+{% block content %}
+
+<div class="welcome-container">
+
+    <div class="welcome-emoji">
+        🌸 💖 ✨
+    </div>
+
+    <h1 class="handwriting">
+        Hi, Lavanya
+    </h1>
+
+    <h2 class="title">
+        Welcome to your tiny little corner of the internet
+    </h2>
+
+    <p class="subtitle">
+        I made this because talking to you over the past few days
+        has genuinely been fun.
+        <br><br>
+
+        Nothing serious.
+        Nothing complicated.
+        <br>
+
+        Just a cute little way to know you a bit better.
+        🌷
+    </p>
+
+    <div class="message-card">
+
+        <p>
+            Since you're always flying around and making people's
+            journeys comfortable ✈️
+            <br><br>
+
+            I thought I'd take you on a tiny journey of my own.
+        </p>
+
+    </div>
+
+    <div class="button-center">
+
+        <a href="{{ url_for('nickname') }}">
+
+            <button type="button">
+
+                Let's Go 🌸
+
+            </button>
+
+        </a>
+
+    </div>
+
+</div>
+
+{% endblock %}
