@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}Hi, Lavanya{% endblock %}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Sacramento&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/animations.css') }}">
+
+</head>
+
+<body>
+
+<div class="floating-hearts">
+
+    <span>❤</span>
+    <span>🤍</span>
+    <span>🌸</span>
+    <span>💖</span>
+    <span>✨</span>
+    <span>🌷</span>
+    <span>🤍</span>
+    <span>💗</span>
+
+</div>
+
+<div class="background-blur"></div>
+
+<div class="page-wrapper">
+
+    <div class="glass-card">
+
+        {% block content %}
+
+        {% endblock %}
+
+    </div>
+
+</div>
+
+<footer>
+
+    Made with ☕ and a little curiosity 🌸
+
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
